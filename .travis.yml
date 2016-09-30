@@ -2,7 +2,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y libboost-all-dev
 
-install: make get-deps
+install: make
 
 script:
   - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/
