@@ -1,7 +1,10 @@
+sudo: required
+dist: trusty
+
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y libboost-all-dev
-  - sudo apt-get install libvala-0.22* valac-0.22*
+  - sudo apt-get install libvala-0.22 valac-0.22
 
 install:
   - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/
