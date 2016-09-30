@@ -10,3 +10,5 @@ before_install:
 install:
   - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/
   - sudo make install
+
+script: bake
