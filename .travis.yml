@@ -6,6 +6,7 @@ before_install:
   - sudo apt-get install -y libboost-all-dev
   - sudo apt-get install libvala-0.22 valac-0.22
   - sudo apt-get install itstool
+  - wget http://ftp.gnome.org/pub/gnome/sources/glib/2.48/glib-2.48.2.tar.xz && tar xf glib-2.48.2.tar.xz && cd glib-2.48.2 && ./configure && make && sudo make install
 
 install:
   - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/
