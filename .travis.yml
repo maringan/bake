@@ -9,6 +9,6 @@ before_install:
   - wget http://ftp.gnome.org/pub/gnome/sources/glib/2.48/glib-2.48.2.tar.xz && tar xf glib-2.48.2.tar.xz && cd glib-2.48.2 && ./configure && make && sudo make install && cd ..
 
 install:
-  - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/ && make install
+  - make LIBRARY_DIRECTORY=/usr/lib/x86_64-linux-gnu/ && sudo make install
 
 script: bake
